@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'MyWebFont';
+  src: url('myfont.woff2') format('woff2'), url('myfont.woff') format('woff');
+}
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  display: flex;
+  margin: 0px;
+  margin-top: 0px;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+
+.logo {
+  margin-left: 50px;
+  height: 100px;
+  width: 100px;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+nav {
+  padding: 30px;
+  width: 100%;
+  display: flex;
+  margin-bottom: 50px;
+  background-color: whitesmoke;
+  border-bottom: 4px solid #c0c0c0;
+}
+.nav-item {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+#nav-name {
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #555;
+  font-size: xx-large;
+  padding: 30px;
+  padding-left: 20px;
+}
+
+#blog {
+  font-size: 30px;
+  padding: 30px;
+}
+
+.form-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 80vh;
+  width: 70vw;
+  background-color: #033f54;
+  text-align: center;
+}
+
+h1 {
+  font-family: 'Source Sans Pro', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  padding-top: 30px;
+  font-size: 70px;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.form-input {
+  margin-top: 40px;
+  text-align: center;
+  margin-bottom: 0;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 25px;
+  color: #fff;
+}
+i {
+  margin-top: 5px;
+  font-size: 13px;
+  font-family: sans-serif;
+  color: #fff;
+}
+input {
+  text-align: center;
+  border: 0;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  padding: 15px;
+}
+button {
+  color: #663300;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 18px;
+  padding: 13px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border: 0;
+  border-top: 1px solid #ffb266;
+  border-bottom: 3px solid #663300;
+  background-color: #ff9933;
+  box-shadow: inset 0 0 0 0 #fff;
+  transition: ease-out 0.3;
+}
+
+.btn:focus {
+  background-color: crimson;
+}
+
+.decription {
+  align-items: center;
+}
+.card {
+  margin-left: 70px;
+  display: flex;
+}
+.ol {
+  padding: 0;
+  text-align: center;
+  background-color: #fff;
+  color: #999;
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  border: 3px solid #e0e0e0;
+}
+.dec-sub-title {
+  margin-left: 5px;
+}
+h3 {
+  font-size: 30px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+h4 {
+  font-family: 'Roboto', sans-serif;
+  width: 70%;
+  padding: 5px;
+  margin: 0;
+}
+h5 {
+  font-family: 'Roboto', sans-serif;
+  width: 70%;
+  color: #555;
+  padding: 20px;
+  margin: 0;
+  margin-left: 120px;
+}
+
+footer {
+  width: 100%;
+  margin-top: 100px;
+}
+.footer {
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #033f54;
+}
+.developer {
+  display: flex;
+  justify-content: start;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.profile {
+  margin-right: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 30%;
+  height: 300px;
+  background-color: whitesmoke;
+}
+.avatar {
+  margin: 5px;
+  position: relative;
+  height: 100px;
+  border: 1px solid black;
+  width: 100px;
+  border-radius: 50%;
+}
+#dev-name {
+  padding: 0;
+  margin: 0;
+  font-size: 20px;
+}
+#dev-sub {
+  padding: 10px;
+  margin: 0;
+}
+.mxh {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mxh-content {
+  padding-right: 10px;
+}
+@media (max-width: 480px) {
+  h1 {
+    font-size: 50px;
+  }
+  h3 {
+    font-size: 25px;
+  }
+  p {
+    margin-right: 30px;
+    margin-left: 30px;
+    font-size: 20px;
+    margin-bottom: 0;
+  }
+  .logo {
+    margin-left: 3px;
+    height: 50px;
+    width: 50px;
+  }
+  nav {
+    position: fixed;
+    padding: 20px;
+    margin-bottom: 0;
+  }
+  #nav-name {
+    padding: 0;
+    padding-left: 5px;
+    font-size: 18px;
+    width: 50%;
+  }
+  #blog {
+    padding: 0;
+    font-size: 20px;
+  }
+  .container {
+    width: 100vw;
+  }
+  .form-main {
+    width: 100vw;
+    height: 80vh;
+  }
+  .form-input {
+    width: 70vw;
+  }
+  .btn {
+    font-size: 15px;
+  }
+  .card {
+    margin-left: 0px;
+  }
+  h4 {
+    width: 100%;
+    padding: 0;
+  }
+  h5 {
+    padding: 10px;
+    margin-left: 35px;
+    width: 80%;
+  }
+}
